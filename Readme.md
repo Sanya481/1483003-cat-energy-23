@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Еремеев](https://up.htmlacademy.ru/adaptive/23/user/1483003).
-* Наставник: [Михаил Кислый] (https://htmlacademy.ru/profile/smart-grizzly).
+* Наставник:  [Михаил Кислый] (https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
