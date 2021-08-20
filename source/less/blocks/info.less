@@ -1,0 +1,90 @@
+.info__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.info__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.info__list {
+  color: var(--special-dark-grey);
+  margin-bottom: 42px;
+}
+
+.info__item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.info__item:last-child {
+  margin-bottom: 0;
+}
+
+.info__description {
+  margin: 0;
+  margin-left: 80px;
+  padding-bottom: 6px;
+}
+
+.info__description::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  left: 1px;
+  background-color: var(--basic-green);
+}
+
+.info__description--leaf::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 32px;
+  top: 14px;
+  left: 17px;
+  background-image: url("../../img/icon-leaf.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.info__description--liquid::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 32px;
+  top: 14px;
+  left: 17px;
+  background-image: url("../../img/icon-liquid.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.info__description--tableware::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 32px;
+  top: 15px;
+  left: 18px;
+  background-image: url("../../img/icon-tableware.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.info__description--alarm::after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 32px;
+  top: 13px;
+  left: 15px;
+  background-image: url("../../img/icon-alarm.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
