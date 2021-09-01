@@ -1,0 +1,134 @@
+.goods {
+  position: relative;
+  border-top: 1px solid var(--special-light-grey-2);
+  border-bottom: 1px solid var(--special-light-grey-2);
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: none;
+    border-bottom: none;
+    background-color: var(--basic-grey);
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    /* margin-right: 80px;
+    margin-bottom: 144px;
+
+    &:nth-child(4) {
+      margin-right: 0;
+    } */
+  }
+}
+
+.goods__title {
+  margin: 0;
+  margin-bottom: 18px;
+  padding-left: 140px;
+  width: 90px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 auto 21px;
+    width: 150px;
+    padding-top: 161px;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 21px;
+  }
+}
+
+.goods__list {
+  margin: 0;
+  margin-bottom: 22px;
+  width: 140px;
+  padding-left: 140px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 0;
+    width: 251px;
+    margin: 0 auto 33px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
+}
+
+.goods__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--special-dark-grey);
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    width: 251px;
+    margin: 0 auto 14px;
+    border-bottom: 1px solid var(--special-grey);
+    padding-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 181px;
+  }
+}
+
+.goods__image {
+  position: absolute;
+  background-position: center 0;
+  background-repeat: no-repeat;
+
+  /* @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog/product-1@2x.png");
+    background-position: 0 0;
+    background-size: ;
+  } */
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    order: -1;
+    top: -70px;
+    left: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -78px;
+    left: 45px;
+  }
+}
+
+.goods__button {
+  width: 100%;
+  padding: 10px;
+
+  &--grey {
+    background-color: var(--basic-grey);
+    color: var(--special-dark-grey);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+    align-self: center;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+}
+
+.goods-background-white {
+  background-color: var(--basic-white);
+}

@@ -1,0 +1,44 @@
+.gift__wrapper {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1000px;
+    padding: 0 110px;
+  }
+}
+
+.gift__title {
+  position: relative;
+  margin: 0;
+  padding: 187px 61px 43px 65px;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  opacity: 0.85;
+  text-align: center;
+  z-index: 2;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../img/icon-gift.svg");
+    background-position: 0 -32px;
+    background-repeat: no-repeat;
+  }
+}
+
+.gift__image {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}

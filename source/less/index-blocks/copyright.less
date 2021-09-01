@@ -1,0 +1,29 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.copyright__link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--special-dark-grey);
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.copyright__logo-html-academy {
+  width: 27px;
+  height: 34px;
+}

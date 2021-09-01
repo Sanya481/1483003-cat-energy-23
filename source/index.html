@@ -29,7 +29,7 @@
         <img class="page-header__logo-3-image" src="img/logo.svg" width="174" height="51"
           alt="Интернет магазин: Cat energy">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -58,7 +58,12 @@
           <h1 class="intro__title">Функциональное питание для котов</h1>
           <p class="intro__slogan">Занялся собой? Займись котом!</p>
           <a class="button intro__button">Подобрать программу</a>
+          <img class="intro__image" src="img/intro-image-mobile.png" width="280" height="270" alt="">
         </div>
+        <!-- <div class="intro__example__class-2">
+          <img class="intro__image" src="img/intro-background-image.jpg" width="563" height="302"
+            alt="Облизывающийся кот">
+        </div> -->
       </div>
     </section>
 
@@ -123,14 +128,15 @@
           Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
           16
           часов в день. </p>
-          <fieldset>
-            <span>5 кг</span>
-            <legend>Снижение веса</legend>
-          </fieldset>
+        <fieldset>
+          <legend>Снижение веса</legend>
+          <span>5 кг</span>
+        </fieldset>
       </div>
     </section>
 
-    <section class="cooperation">
+    <section class="cooperation cooperation--background-color-white">
+      <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
       <div class="cooperation__wrapper">
         <!-- Почему грид сетка выходит за wrapper, если постмотреть в инспекторе кода? -->
         <p class="cooperation__description">Приглашаем<br>к сотрудничеству дилеров!</p>
@@ -139,6 +145,7 @@
     </section>
 
     <section class="map">
+      <h2 class="visually-hidden">Местоположение магазина на карте</h2>
       <div class="map__wrapper">
         <!-- <img class="map__img" src="img/map.png" width="320" height="362" alt="Координаты магазина на карте"> -->
         <img class="map__marker" src="img/map-marker.png" width="57" height="53" alt="Маркер точного места на карте">
@@ -149,10 +156,11 @@
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo logo-text">
         <img src="img/logo-2.svg" width="128" height="24" alt="Интернет магазин: Cat energy">
       </a>
       <div class="page-footer__social social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte">
