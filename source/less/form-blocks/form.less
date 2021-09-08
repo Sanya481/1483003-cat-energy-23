@@ -11,7 +11,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 82px;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
@@ -21,8 +23,7 @@
   padding-bottom: 7px;
 
   @media (min-width: @tablet-width) {
-    width: 282px;
-    padding: 13px 45px;
+    padding: 16px 64px;
   }
 }
 
@@ -40,5 +41,11 @@
     display: inline-block;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+    align-self: center;
+    margin-bottom: 0;
   }
 }

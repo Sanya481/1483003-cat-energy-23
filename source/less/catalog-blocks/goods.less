@@ -68,6 +68,7 @@
 .goods__row {
   display: flex;
   justify-content: space-between;
+  font-family: "Arial";
   font-size: 12px;
   line-height: 16px;
   color: var(--special-dark-grey);
@@ -87,8 +88,12 @@
 
 .goods__image {
   position: absolute;
-  background-position: center 0;
+  /* background-position: center 0; */
   background-repeat: no-repeat;
+  top: 37px;
+  left: 30px;
+  /* width: 68px;
+  height: 86px; */
 
   /* @media (min-resolution: 2dppx) {
     background-image: url("../../img/catalog/product-1@2x.png");
@@ -101,11 +106,35 @@
     order: -1;
     top: -70px;
     left: 82px;
+    width: 162px;
+    height: 172px;
   }
 
   @media (min-width: @desktop-width) {
     top: -78px;
     left: 45px;
+  }
+}
+
+.goods__image--half-a-kilo {
+  top: 52px;
+  left: 38px;
+
+  @media (min-width: @tablet-width) {
+    top: -45px;
+    left: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -48px;
+    left: 45px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .goods__image--one-kilogram {
+    width: 168px;
+    height: 200px;
   }
 }
 

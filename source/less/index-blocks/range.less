@@ -1,0 +1,39 @@
+.range {
+  margin-right: 12px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid var(--special-grey);
+  border-radius: 8px;
+  background-color: var(--basic-white);
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    background-color: var(--special-grey-1);
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.range__toggle {
+  width: 35px;
+  height: 6px;
+  background-color: var(--basic-green);
+  border-radius: 5px;
+  margin: 4px 43px 4px 6px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 13px solid var(--basic-white);
+    border-radius: 17px;
+    margin: 0;
+    top: -14px;
+    left: 195px;
+  }
+}

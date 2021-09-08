@@ -9,6 +9,8 @@
 
 .social__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   border-top: 1px solid var(--basic-light-grey);
   border-bottom: 1px solid var(--basic-light-grey);
 
@@ -24,5 +26,17 @@
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.social__icon {
+  cursor: pointer;
+
+  &:hover {
+    fill: var(--basic-green);
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }

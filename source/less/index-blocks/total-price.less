@@ -1,0 +1,28 @@
+.total-price {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.total-price__term {
+  margin-right: 3px;
+
+  @media (min-width: @desktop-width) {
+    margin-right: 63px;
+  }
+}
+
+.total-price__definition {
+  margin: 0;
+}
