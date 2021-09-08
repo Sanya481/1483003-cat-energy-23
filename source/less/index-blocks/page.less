@@ -1,0 +1,70 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: flex; /* Прижимаем footer к низу страницы*/
+  flex-direction: column;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  margin: 0;
+  padding: 0;
+}
+
+.page-main,
+.page-form,
+.page-catalog {
+  flex-grow: 1; /* Прижимаем footer к низу страницы */
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-list,
+.diet__list,
+.info__list,
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  display: inline-block; /* Зачем? */
+  font: inherit;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  cursor: pointer;
+}

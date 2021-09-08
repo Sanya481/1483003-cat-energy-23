@@ -1,0 +1,26 @@
+.page-footer {
+  flex-grow: 0; /* Прижимаем footer к низу страницы */
+  flex-shrink: 0;
+  flex-basis: auto;
+  background-color: var(--basic-grey);
+}
+
+.page-footer__wrapper {
+  width: 260px;
+  margin: 0 auto;
+  padding: 39px 10px 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 708px;
+    padding: 55px 30px 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 57px 110px 58px;
+  }
+}

@@ -1,0 +1,71 @@
+.user-contact {
+  color: var(--special-dark-grey);
+
+  grid-area: three;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 69px;
+  }
+}
+
+.user-contact__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+@media (min-width: @desktop-width) {
+  .user-contact__item--mail {
+    margin-right: 80px;
+  }
+}
+
+.user-contact__mail {
+  width: 100px;
+}
+
+.user-contact__telephone {
+  width: 140px;
+}
+
+.user-contact__field {
+  border: 1px solid var(--special-grey);
+  width: 100%;
+  padding: 15px;
+  padding-right: 40px;
+
+  &--mail {
+    background-image: url("../img/icon-email.svg");
+    background-position: 185px 17px;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      background-position: 586px 19px;
+    }
+  }
+
+  &--telephone {
+    background-image: url("../img/icon-phone.svg");
+    background-position: 171px 13px;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      background-position: 562px 16px;
+    }
+  }
+}
+
+.user-contact__field:focus {
+  border: 2px solid var(--special-dark-grey);
+}
+
+.user-contact__field:disabled {
+  border: 2px solid var(--basic-red);
+}

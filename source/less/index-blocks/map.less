@@ -1,0 +1,56 @@
+.map__wrapper {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+    margin: 0 auto;
+  }
+}
+
+.map__img {
+  width: 320px;
+  height: 362px;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    height: 400px;
+    object-fit: cover;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  width: 57px;
+  height: 53px;
+  top: 140px;
+  left: 134px;
+
+  @media (min-width: @tablet-width) {
+    width: 113px;
+    height: 106px;
+    top: 120px;
+    left: 333px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 113px;
+    height: 106px;
+    top: 145px;
+    left: 760px;
+  }
+}

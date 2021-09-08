@@ -1,0 +1,55 @@
+.user-data {
+  grid-area: one;
+}
+
+@media (min-width: @tablet-width) {
+  .user-data {
+    margin-bottom: 72px;
+  }
+}
+
+.user-data__item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 13px;
+}
+
+.user-data__name {
+  width: 55px;
+
+  @media (min-width: @tablet-width) {
+    width: 75px;
+  }
+}
+
+.user-data__weight {
+  width: 95px;
+
+  @media (min-width: @tablet-width) {
+    width: 110px;
+  }
+}
+
+.user-data__age {
+  width: 180px;
+}
+
+.user-data__field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 10px 13px 16px;
+  border: 1px solid var(--basic-extra-light-grey);
+
+  &:hover {
+    border: 1px solid var(--special-grey);
+  }
+
+  &:focus {
+    border: 1px solid var(--special-dark-grey);
+  }
+
+  &:disabled {
+    border: 2px solid var(--basic-red);
+  }
+}
