@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 69px;
+    width: 1440px;
   }
 }
 
@@ -19,11 +20,15 @@
   align-items: center;
   margin: 0;
   margin-bottom: 14px;
+
+  @media (min-width: @desktop-width) {
+    margin-left: 50px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .user-contact__item--mail {
-    margin-right: 80px;
+    margin-right: 50px;
   }
 }
 
@@ -49,6 +54,10 @@
     @media (min-width: @tablet-width) {
       background-position: 586px 19px;
     }
+
+    @media (min-width: @desktop-width) {
+      background-position: 403px 20px;
+    }
   }
 
   &--telephone {
@@ -58,6 +67,10 @@
 
     @media (min-width: @tablet-width) {
       background-position: 562px 16px;
+    }
+
+    @media (min-width: @desktop-width) {
+      background-position: 430px 16px;
     }
   }
 }

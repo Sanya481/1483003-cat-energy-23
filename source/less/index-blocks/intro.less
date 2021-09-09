@@ -5,6 +5,8 @@
   color: var(--basic-white);
   margin-bottom: 200px;
 
+  position: relative;
+
   @media (min-width: @tablet-width) {
     background-color: var(--basic-white);
     color: var(--basic-black);
@@ -12,6 +14,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 267px;
+    opacity: 1;
   }
 }
 
@@ -75,6 +78,21 @@
   }
 } */
 
+/* .intro__example__class {
+  position: relative;
+}
+ */
+/* .intro::before {
+  position: absolute;
+  content: "";
+  width: 563px;
+  height: 302px;
+  top: 0;
+  left: 0;
+  background-image: url("../../img/intro-background-image.jpg");
+  background-repeat: no-repeat;
+} */
+
 @media (min-width: @tablet-width) {
   .intro__example__class {
     width: 414px;
@@ -108,7 +126,7 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 164px;
+  margin-bottom: 147px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;

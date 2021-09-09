@@ -14,7 +14,35 @@
   background-color: var(--basic-white);
   margin: 0;
   padding: 0;
+
+  position: relative;
 }
+
+/* .page__body::before {
+  position: absolute;
+  content: "";
+  width: 563px;
+  height: 302px;
+  top: 66px;
+  left: 164px;
+  background-image: url("../img/intro-background-image.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    content: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "";
+    width: 1043px;
+    height: 696px;
+    top: 66px;
+    left: 164px;
+    background-image: url("../img/intro-background-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+} */
 
 .page-main,
 .page-form,
@@ -56,7 +84,7 @@ img {
 }
 
 .button {
-  display: inline-block; /* Зачем? */
+  display: inline-block;
   font: inherit;
   line-height: 20px;
   font-weight: 400;
