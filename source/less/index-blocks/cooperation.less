@@ -3,7 +3,9 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    width: 318px;
+    z-index: 2;
+    bottom: 100px;
+    left: 110px;
   }
 }
 
@@ -28,7 +30,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 318px;
+    width: 570px;
+    padding-top: 66px;
+    padding-bottom: 51px;
     background-color: var(--basic-white);
   }
 }
@@ -45,6 +49,12 @@
     line-height: 21px;
     margin-left: 41px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 180px;
+    margin: 0;
+    margin-left: 76px;
+  }
 }
 
 .cooperation__address {
@@ -59,5 +69,12 @@
     line-height: 20px;
     margin-right: 41px;
     text-align: right;
+    width: 195px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 155px;
+    text-align: left;
+    margin-right: 89px;
   }
 }

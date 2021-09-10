@@ -103,14 +103,19 @@
             <div class="user-contact__bar heading-h2 heading-h2--user-contact">
               <h2 class="heading-h2__title">Контактные данные (владельца кота)</h2>
             </div>
-            <!-- <p class="user-contact__title">Контактные данные (владельца кота)</p> -->
             <p class="user-contact__item user-contact__item--mail">
               <label class="user-contact__mail" for="mail">e-mail:<sup>*</sup></label>
               <input class="user-contact__field user-contact__field--mail" id="mail" type="email" name="mail" placeholder="KUKLACHEV@GMAIL.COM" required>
+              <svg class="user-contact__mail-icon" width="20" height="15">
+                <use xlink:href="img/sprite.svg#icon-email"></use>
+              </svg>
             </p>
             <p class="user-contact__item">
               <label class="user-contact__telephone" for="telephone">Телефон:<sup>*</sup></label>
               <input class="user-contact__field user-contact__field--telephone" id="telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              <svg class="user-contact__telephone-icon" width="20" height="21">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </p>
           </div>
 
@@ -161,9 +166,8 @@
     <section class="cooperation">
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
       <div class="cooperation__wrapper">
-        <!-- Почему грид сетка выходит за wrapper, если постмотреть в инспекторе кода? -->
-        <p class="cooperation__description">Приглашаем<br>к сотрудничеству дилеров!</p>
-        <p class="cooperation__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <p class="cooperation__description">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
     </section>
 
