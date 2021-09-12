@@ -1,6 +1,5 @@
 .user-contact {
   color: var(--special-dark-grey);
-
   grid-area: three;
 
   @media (min-width: @tablet-width) {
@@ -21,15 +20,17 @@
   margin: 0;
   margin-bottom: 14px;
   position: relative;
-
-  @media (min-width: @desktop-width) {
-    margin-left: 50px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .user-contact__item--mail {
     margin-right: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-contact__item--phone {
+    margin-left: 50px;
   }
 }
 
@@ -46,6 +47,36 @@
   padding: 15px;
   padding-right: 40px;
   border: 1px solid var(--basic-extra-light-grey);
+  outline: none;
+
+  &:hover {
+    border: 1px solid var(--special-grey);
+  }
+
+  &:focus {
+    border: 2px solid var(--special-dark-grey);
+    border-radius: 0;
+  }
+
+  &:focus:invalid {
+    border-color: 2px solid var(--basic-red);
+  }
+}
+
+.user-contact__field--mail:focus + .user-contact__mail-icon {
+  stroke: var(--basic-green);
+}
+
+.user-contact__field--mail:focus:invalid + .user-contact__mail-icon {
+  stroke: var(--basic-red);
+}
+
+.user-contact__field--telephone:focus + .user-contact__telephone-icon {
+  fill: var(--basic-green);
+}
+
+.user-contact__field--telephone:focus:invalid + .user-contact__telephone-icon {
+  fill: var(--basic-red);
 }
 
 .user-contact__mail-icon {
@@ -54,6 +85,8 @@
   height: 15px;
   top: 19px;
   right: 12px;
+  fill: none;
+  stroke: var(--basic-black);
 }
 
 .user-contact__telephone-icon {
@@ -63,14 +96,3 @@
   width: 20px;
   height: 21px;
 }
-
-.user-contact__field:focus + .user-contact__mail-icon,
-.user-contact__field:focus + .user-contact__telephone-icon {
-  /* border: 2px solid var(--special-dark-grey); */
-  fill: var(--basic-green);
-}
-
-/* .user-contact__field:invalid + .user-contact__mail-icon,
-.user-contact__field:invalid + .user-contact__telephone-icon {
-  fill: var(--basic-red);
-} */

@@ -2,7 +2,7 @@
   grid-area: one;
 
   @media (min-width: @tablet-width) {
-    width: 569px;
+    width: 567px;
   }
 }
 
@@ -51,9 +51,10 @@
 
   &:focus {
     border: 1px solid var(--special-dark-grey);
+    border-radius: 0;
   }
 
-  &:disabled {
-    border: 2px solid var(--basic-red);
+  &:focus:invalid {
+    border: 1px solid var(--basic-extra-light-grey);
   }
 }

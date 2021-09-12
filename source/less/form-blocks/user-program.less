@@ -7,7 +7,6 @@
   padding: 0;
   margin: 0;
   margin-bottom: 26px;
-
   grid-area: two;
 
   @media (min-width: @tablet-width) {
@@ -16,7 +15,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 569px;
+    width: 565px;
   }
 }
 
@@ -40,6 +39,7 @@
 
 .user-program__title {
   position: relative;
+  cursor: pointer;
   padding-left: 45px;
 }
 
@@ -57,10 +57,19 @@
 .user-program__radio:checked + .user-program__title::after {
   content: "";
   position: absolute;
-  width: 13px;
-  height: 13px;
-  left: 9px;
-  top: 5px;
+  width: 12px;
+  height: 12px;
+  left: 10px;
+  top: 6px;
   background-color: var(--basic-green);
   border-radius: 50%;
+}
+
+.user-program__title:hover::before {
+  border: 1px solid var(--basic-extra-light-grey-3);
+}
+
+.user-program__radio:disabled + .user-program__title {
+  cursor: default;
+  opacity: 0.3;
 }

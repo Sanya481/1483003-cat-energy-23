@@ -2,6 +2,8 @@
   .gift {
     display: inline-block;
     width: 245px;
+    position: relative;
+    bottom: 18px;
   }
 }
 
@@ -17,25 +19,40 @@
     content: "";
     width: 279px;
     height: 289px;
-    background-image: url("../img/gift-background-image.jpg");
-    background-repeat: no-repeat;
     top: 0;
     left: 20px;
+    background-image: url("../img/gift-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 279px 289px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-background-image@2x.jpg");
+    }
 
     @media (min-width: @tablet-width) {
       width: 707px;
       height: 200px;
-      background-image: url("../img/gift-background-image-tablet.jpg");
       top: 0;
       left: 30px;
+      background-image: url("../img/gift-background-image-tablet.jpg");
+      background-size: 707px 200px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/gift-background-image-tablet@2x.jpg");
+      }
     }
 
     @media (min-width: @desktop-width) {
       width: 245px;
       height: 289px;
-      background-image: url("../img/gift-background-image-desktop.jpg");
       top: 0;
       left: 110px;
+      background-image: url("../img/gift-background-image-desktop.jpg");
+      background-size: 245px 289px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/gift-background-image-desktop@2x.jpg");
+      }
     }
   }
 
