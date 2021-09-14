@@ -6,9 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: relative;
-    display: inline-block;
-    width: 650px;
+    background-color: var(--basic-grey);
   }
 }
 
@@ -20,10 +18,13 @@
   @media (min-width: @tablet-width) {
     width: 708px;
     padding: 0 30px;
-    margin-bottom: 250px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-column-gap: 80px;
     width: 1220px;
     padding: 70px 110px 75px;
     background-color: var(--basic-grey);
@@ -52,7 +53,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 143px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-bottom: 0;
     margin-top: -200px;
   }
 }
