@@ -35,5 +35,15 @@
     margin: 0;
     top: -14px;
     left: 195px;
+    filter: drop-shadow(0 1px 3px var(--shadow-color));
+    cursor: pointer;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px var(--shadow-color-2));
+    }
+
+    &:active {
+      filter: drop-shadow(0 3px 5px var(--shadow-color-3));
+    }
   }
 }

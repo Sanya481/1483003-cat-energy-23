@@ -13,7 +13,6 @@
 </head>
 
 <body class="page__body">
-
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo-1" href="#">
@@ -32,7 +31,7 @@
         <img class="page-header__logo-4-image" src="img/logo-desktop.svg" width="202" height="59"
           alt="Интернет магазин: Cat energy">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -52,21 +51,17 @@
       </nav>
     </div>
   </header>
-
   <main class="page-form">
-
     <section class="form-intro">
       <div class="form-intro__wrapper">
         <h1 class="form-intro__title">Подбор программы</h1>
         <p class="form-intro__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
     </section>
-
     <section class="questionnaire">
       <h2 class="visually-hidden">Опросник</h2>
       <div class="questionnaire__wrapper">
         <form class="questionnaire__form form" action="https://echo.htmlacademy.ru" method="POST">
-
           <div class="form__user-data user-data">
             <p class="user-data__item">
               <label class="user-data__name" for="name">Имя:<sup>*</sup></label>
@@ -81,44 +76,49 @@
               <input class="user-data__field" id="user-age" type="text" name="age" placeholder="7">
             </p>
           </div>
-
           <fieldset class="form__program user-program">
             <ul class="user-program__list">
               <li class="user-program__item">
-                <input class="user-program__radio visually-hidden" id="weight-loss" type="radio" name="weight-down" checked>
+                <input class="user-program__radio visually-hidden" id="weight-loss" type="radio"
+                  name="nutrition-program" checked>
                 <label class="user-program__title" for="weight-loss">Похудение</label>
               </li>
               <li class="user-program__item">
-                <input class="user-program__radio visually-hidden" id="weight-gain" type="radio" name="weight-up">
+                <input class="user-program__radio visually-hidden" id="weight-gain" type="radio"
+                  name="nutrition-program">
                 <label class="user-program__title" for="weight-gain">Набор массы</label>
               </li>
               <li class="user-program__item">
-                <input class="user-program__radio visually-hidden" id="help" type="radio" name="advice">
+                <input class="user-program__radio visually-hidden" id="help" type="radio" name="nutrition-program">
                 <label class="user-program__title" for="help">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
-
           <div class="form__contact user-contact">
             <div class="user-contact__bar heading-h2 heading-h2--user-contact">
               <h2 class="heading-h2__title">Контактные данные (владельца кота)</h2>
             </div>
-            <!-- <p class="user-contact__title">Контактные данные (владельца кота)</p> -->
             <p class="user-contact__item user-contact__item--mail">
               <label class="user-contact__mail" for="mail">e-mail:<sup>*</sup></label>
-              <input class="user-contact__field user-contact__field--mail" id="mail" type="email" name="mail" placeholder="KUKLACHEV@GMAIL.COM" required>
+              <input class="user-contact__field user-contact__field--mail" id="mail" type="email" name="mail"
+                placeholder="KUKLACHEV@GMAIL.COM" required>
+              <svg class="user-contact__mail-icon" width="20" height="15">
+                <use xlink:href="img/sprite.svg#icon-email"></use>
+              </svg>
             </p>
-            <p class="user-contact__item">
+            <p class="user-contact__item user-contact__item--phone">
               <label class="user-contact__telephone" for="telephone">Телефон:<sup>*</sup></label>
-              <input class="user-contact__field user-contact__field--telephone" id="telephone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              <input class="user-contact__field user-contact__field--telephone" id="telephone" type="tel" name="phone"
+                placeholder="8 (960) 900-60-90" required>
+              <svg class="user-contact__telephone-icon" width="20" height="21">
+                <use xlink:href="img/sprite.svg#icon-phone"></use>
+              </svg>
             </p>
           </div>
-
           <div class="form__comment user-comment">
             <div class="user-comment__bar heading-h2 heading-h2--user-comment">
               <h2 class="heading-h2__title">Комментарий</h2>
             </div>
-            <!-- <p class="user-comment__title">Комментарий</p> -->
             <p class="user-comment__item">
               <label for="textarea-field"></label>
               <textarea class="user-comment__field" id="textarea-field" name="comment" cols="30" rows="10"
@@ -130,14 +130,15 @@
             <div class="additional-option__bar heading-h2  heading-h2--additional-option">
               <h2 class="heading-h2__title">Дополнительно</h2>
             </div>
-            <!-- <legend class="additional-option__title">Дополнительно</legend> -->
             <ul class="additional-option__list">
               <li class="additional-option__item">
-                <input class="additional-option__checkbox visually-hidden" id="sweetener" type="checkbox" name="sugar-substitute" checked>
+                <input class="additional-option__checkbox visually-hidden" id="sweetener" type="checkbox"
+                  name="sugar-substitute" checked>
                 <label class="additional-option__text" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="additional-option__item">
-                <input class="additional-option__checkbox visually-hidden" id="water" type="checkbox" name="drinking-water">
+                <input class="additional-option__checkbox visually-hidden" id="water" type="checkbox"
+                  name="drinking-water">
                 <label class="additional-option__text" for="water">Питьевая вода</label>
               </li>
               <li class="additional-option__item">
@@ -145,7 +146,8 @@
                 <label class="additional-option__text" for="some-milk">Молоко</label>
               </li>
               <li class="additional-option__item">
-                <input class="additional-option__checkbox visually-hidden" id="dietary-supplements" type="checkbox" name="vitamins">
+                <input class="additional-option__checkbox visually-hidden" id="dietary-supplements" type="checkbox"
+                  name="vitamins">
                 <label class="additional-option__text" for="dietary-supplements">Витамины</label>
               </li>
             </ul>
@@ -157,39 +159,42 @@
         </form>
       </div>
     </section>
-
     <section class="cooperation">
       <h2 class="visually-hidden">Приглашение к сотрудничеству</h2>
       <div class="cooperation__wrapper">
-        <!-- Почему грид сетка выходит за wrapper, если постмотреть в инспекторе кода? -->
-        <p class="cooperation__description">Приглашаем<br>к сотрудничеству дилеров!</p>
-        <p class="cooperation__address">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <p class="cooperation__description">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
     </section>
-
-
     <section class="map">
       <h2 class="visually-hidden">Местоположение магазина на карте</h2>
       <div class="map__wrapper">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/map-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.png">
-          <img class="map__img" src="img/map.png" width="320" height="362" alt="Координаты магазина на карте">
+          <source type="img/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
+          <source type="img/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+          <source type="img/webp" srcset="img/map.webp, img/map@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
+          <img class="map__img" src="img/map.png" srcset="img/map@2x.png 2x" width="320" height="362"
+            alt="Координаты магазина на карте">
         </picture>
-
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/map-marker-tablet.png">
-          <source media="(min-width: 768px)" srcset="img/map-marker-tablet.png">
-          <img class="map__marker" src="img/map-marker.png" width="57" height="53" alt="Маркер точного места на карте">
+          <source type="img/webp" media="(min-width: 1440px)"
+            srcset="img/map-marker-tablet.webp, img/map-marker-tablet@2x.webp 2x">
+          <source type="img/webp" media="(min-width: 768px)"
+            srcset="img/map-marker-tablet.webp, img/map-marker-tablet@2x.webp 2x">
+          <source type="img/webp" srcset="img/map-marker.webp, img/map-marker@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/map-marker-tablet.png, img/map-marker-tablet@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-marker-tablet.png, img/map-marker-tablet@2x.png 2x">
+          <img class="map__marker" src="img/map-marker.png" srcset="img/map-marker@2x.png 2x" width="57" height="53"
+            alt="Маркер точного места на карте">
         </picture>
       </div>
     </section>
-
   </main>
-
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo logo-text">
         <img src="img/logo-2.svg" width="128" height="24" alt="Интернет магазин: Cat energy">
       </a>
       <div class="page-footer__social social">
@@ -230,11 +235,8 @@
         </a>
       </div>
     </div>
-
   </footer>
-
   <script src="js/script.min.js"></script>
-
 </body>
 
 </html>

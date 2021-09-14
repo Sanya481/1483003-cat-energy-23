@@ -67,7 +67,6 @@
   }
 
   @media (min-width: @tablet-width) {
-    /* margin-bottom: 0; */
     width: 250px;
     height: 280px;
   }
@@ -83,7 +82,7 @@
 
 @media (min-width: @tablet-width) {
   .info__item--number-one {
-    background-image: url("../../img/1.png");
+    background-image: url("../img/1.png");
     background-repeat: no-repeat;
     background-position: 100px 40px;
   }
@@ -91,7 +90,7 @@
 
 @media (min-width: @tablet-width) {
   .info__item--number-two {
-    background-image: url("../../img/2.png");
+    background-image: url("../img/2.png");
     background-repeat: no-repeat;
     background-position: 100px 40px;
   }
@@ -99,7 +98,7 @@
 
 @media (min-width: @tablet-width) {
   .info__item--number-three {
-    background-image: url("../../img/3.png");
+    background-image: url("../img/3.png");
     background-repeat: no-repeat;
     background-position: 100px 40px;
   }
@@ -107,7 +106,7 @@
 
 @media (min-width: @tablet-width) {
   .info__item--number-four {
-    background-image: url("../../img/4.png");
+    background-image: url("../img/4.png");
     background-repeat: no-repeat;
     background-position: 100px 40px;
   }
@@ -156,13 +155,18 @@
   height: 32px;
   top: 14px;
   left: 17px;
-  background-image: url("../../img/icon-leaf.png");
+  background-image: url("../img/icon-leaf.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 30px 32px;
 
   @media (min-width: @tablet-width) {
     top: 64px;
     left: 25px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/icon-leaf@2x.png");
   }
 }
 
@@ -173,13 +177,18 @@
   height: 31px;
   top: 14px;
   left: 17px;
-  background-image: url("../../img/icon-liquid.png");
+  background-image: url("../img/icon-liquid.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 29px 31px;
 
   @media (min-width: @tablet-width) {
     top: 64px;
     left: 26px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/icon-liquid@2x.png");
   }
 }
 
@@ -190,13 +199,19 @@
   height: 30px;
   top: 15px;
   left: 18px;
-  background-image: url("../../img/icon-tableware.png");
+  background-image: url("../img/icon-tableware.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 25px 30px;
+
 
   @media (min-width: @tablet-width) {
     top: 66px;
     left: 28px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/icon-tableware@2x.png");
   }
 }
 
@@ -207,12 +222,17 @@
   height: 33px;
   top: 13px;
   left: 15px;
-  background-image: url("../../img/icon-alarm.png");
+  background-image: url("../img/icon-alarm.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: 32px 33px;
 
   @media (min-width: @tablet-width) {
     top: 63px;
     left: 25px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/icon-alarm@2x.png");
   }
 }

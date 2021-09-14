@@ -4,7 +4,6 @@
   font-weight: 400;
   color: var(--basic-white);
   margin-bottom: 200px;
-
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -13,23 +12,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 267px;
-    opacity: 1;
+    opacity: 0.85;
+    background: linear-gradient(to right, var(--basic-white) 50%, var(--basic-green) 50%);
+    padding-bottom: 167px;
+    margin-bottom: 50px;
+    margin-top: -1px;
+    background-color: none;
   }
 }
-
-/* .intro::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 95px;
-  width: 563px;
-  height: 302px;
-  background-image: url("../../img/intro-background-image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-} */
-
 
 .intro__wrapper {
   position: relative;
@@ -50,51 +40,8 @@
   }
 }
 
-/* .intro__wrapper::after {
-  position: absolute;
-  content: "";
-  top: 183px;
-  left: 0;
-  width: 280px;
-  height: 270px;
-  background-image: url("../../img/intro-image-mobile.png");
-  background-position: center;
-  background-repeat: no-repeat;
-
-  @media (min-width: @tablet-width) {
-    background-image: url("../../img/intro-image-tablet.png");
-    width: 709px;
-    height: 609px;
-    background-position: 0 40px;
-    z-index: -5;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-image: url("../../img/intro-image-desktop.png");
-    width: 552px;
-    height: 500px;
-    background-position: 0 40px;
-    z-index: -5;
-  }
-} */
-
-/* .intro__example__class {
-  position: relative;
-}
- */
-/* .intro::before {
-  position: absolute;
-  content: "";
-  width: 563px;
-  height: 302px;
-  top: 0;
-  left: 0;
-  background-image: url("../../img/intro-background-image.jpg");
-  background-repeat: no-repeat;
-} */
-
 @media (min-width: @tablet-width) {
-  .intro__example__class {
+  .intro__block-1 {
     width: 414px;
     margin-left: 87px;
     margin-bottom: 526px;
@@ -102,7 +49,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .intro__example__class {
+  .intro__block-1 {
     margin-bottom: 0;
   }
 }
@@ -160,7 +107,6 @@
   left: 20px;
   width: 280px;
   height: 270px;
-  /* z-index: 1; */
 
   @media (min-width: @tablet-width) {
     width: 708px;
