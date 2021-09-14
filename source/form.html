@@ -168,28 +168,9 @@
     </section>
     <section class="map">
       <h2 class="visually-hidden">Местоположение магазина на карте</h2>
-      <div class="map__wrapper">
-        <picture>
-          <source type="img/webp" media="(min-width: 1440px)" srcset="img/map-desktop.webp, img/map-desktop@2x.webp 2x">
-          <source type="img/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
-          <source type="img/webp" srcset="img/map.webp, img/map@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/map-desktop.png, img/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet.png, img/map-tablet@2x.png 2x">
-          <img class="map__img" src="img/map.png" srcset="img/map@2x.png 2x" width="320" height="362"
-            alt="Координаты магазина на карте">
-        </picture>
-        <picture>
-          <source type="img/webp" media="(min-width: 1440px)"
-            srcset="img/map-marker-tablet.webp, img/map-marker-tablet@2x.webp 2x">
-          <source type="img/webp" media="(min-width: 768px)"
-            srcset="img/map-marker-tablet.webp, img/map-marker-tablet@2x.webp 2x">
-          <source type="img/webp" srcset="img/map-marker.webp, img/map-marker@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/map-marker-tablet.png, img/map-marker-tablet@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/map-marker-tablet.png, img/map-marker-tablet@2x.png 2x">
-          <img class="map__marker" src="img/map-marker.png" srcset="img/map-marker@2x.png 2x" width="57" height="53"
-            alt="Маркер точного места на карте">
-        </picture>
-      </div>
+      <iframe class="map__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6058926473545!2d30.318664669170893!3d59.93868154847537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631547121697!5m2!1sru!2sru"
+        allowfullscreen="" loading="lazy"></iframe>
     </section>
   </main>
   <footer class="page-footer">
@@ -198,7 +179,6 @@
         <img src="img/logo-2.svg" width="128" height="24" alt="Интернет магазин: Cat energy">
       </a>
       <div class="page-footer__social social">
-
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte">
