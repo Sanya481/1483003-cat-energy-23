@@ -1,8 +1,8 @@
 .user-data {
   grid-area: one;
 
-  @media (min-width: @tablet-width) {
-    width: 567px;
+  @media (min-width: @desktop-width) {
+    width: 566px;
   }
 }
 
@@ -20,23 +20,39 @@
 }
 
 .user-data__name {
-  width: 55px;
+  white-space: nowrap;
+  padding-right: 8px;
+  /* width: 55px; */
 
   @media (min-width: @tablet-width) {
-    width: 75px;
+    /* width: 75px; */
+    padding-right: 15px;
+    white-space: nowrap;
   }
 }
 
 .user-data__weight {
-  width: 95px;
+  white-space: nowrap;
+  padding-right: 10px;
+  /* width: 95px; */
 
   @media (min-width: @tablet-width) {
-    width: 110px;
+    /* width: 110px; */
+    padding-right: 15px;
+    white-space: nowrap;
   }
 }
 
 .user-data__age {
-  width: 180px;
+  white-space: nowrap;
+  padding-right: 10px;
+  /* width: 180px; */
+
+  @media (min-width: @tablet-width) {
+    /* width: 110px; */
+    padding-right: 15px;
+    white-space: nowrap;
+  }
 }
 
 .user-data__field {
@@ -44,17 +60,18 @@
   box-sizing: border-box;
   padding: 13px 10px 13px 16px;
   border: 1px solid var(--basic-extra-light-grey);
+  outline: none;
 
   &:hover {
     border: 1px solid var(--special-grey);
   }
 
   &:focus {
-    border: 1px solid var(--special-dark-grey);
+    border: 2px solid var(--special-dark-grey);
     border-radius: 0;
   }
 
   &:focus:invalid {
-    border: 1px solid var(--basic-extra-light-grey);
+    border: 2px solid var(--basic-red);
   }
 }
