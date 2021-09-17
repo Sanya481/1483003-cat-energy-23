@@ -10,11 +10,12 @@
     flex-direction: column;
     position: relative;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 40px;
     border-top: none;
     border-bottom: none;
     background-color: var(--basic-grey);
     text-align: center;
+    align-items: center;
   }
 }
 
@@ -118,6 +119,20 @@
 }
 
 .goods__button {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+  }
+}
+
+.more-goods__button {
   width: 100%;
   padding: 10px;
 

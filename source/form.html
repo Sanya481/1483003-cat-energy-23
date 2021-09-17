@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="icon" href="../favicon.ico">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -12,14 +14,14 @@
   <title>Cat energy</title>
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo-1" href="#">
+      <a class="page-header__logo-1" href="index.html">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="37"
           alt="Логотип интернет магазина">
       </a>
-      <a class="page-header__logo-2" href="#">
+      <a class="page-header__logo-2" href="index.html">
         <img class="page-header__logo-2-image" src="img/logo-mobile-2.svg" width="101" height="18"
           alt="Интернет магазин: Cat energy">
       </a>
@@ -174,31 +176,31 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo-text">
+      <a href="index.html" class="page-footer__logo logo-text">
         <img src="img/logo-2.svg" width="128" height="24" alt="Интернет магазин: Cat energy">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte">
+            <a class="social__link vkontakte">
               <span class="visually-hidden">Мы в Вконтакте</span>
-              <svg class="social__icon vkontakte__icon" width="23" height="16">
+              <svg class="social__icon vkontakte-icon" width="23" height="16">
                 <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook">
+            <a class="social__link instagram">
               <span class="visually-hidden">Мы в Инстаграмме</span>
-              <svg class="social__icon instagram__icon" width="16" height="16">
+              <svg class="social__icon instagram-icon" width="16" height="16">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram">
+            <a class="social__link facebook">
               <span class="visually-hidden">Мы в Фейсбуке</span>
-              <svg class="social__icon facebook__icon" width="22" height="22">
+              <svg class="social__icon facebook-icon" width="22" height="22">
                 <use xlink:href="img/sprite.svg#icon-facebook"></use>
               </svg>
             </a>

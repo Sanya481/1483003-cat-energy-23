@@ -48,6 +48,7 @@
   padding-right: 40px;
   border: 1px solid var(--basic-extra-light-grey);
   outline: none;
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid var(--special-grey);
@@ -59,8 +60,26 @@
   }
 
   &:focus:invalid {
-    border-color: 2px solid var(--basic-red);
+    border: 2px solid var(--basic-red);
   }
+}
+
+.user-contact__mail-icon {
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  top: 19px;
+  right: 12px;
+  fill: none;
+  stroke: var(--shadow-color-4);
+}
+
+.user-contact__telephone-icon {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  width: 20px;
+  height: 21px;
 }
 
 .user-contact__field--mail:focus + .user-contact__mail-icon {
@@ -77,22 +96,4 @@
 
 .user-contact__field--telephone:focus:invalid + .user-contact__telephone-icon {
   fill: var(--basic-red);
-}
-
-.user-contact__mail-icon {
-  position: absolute;
-  width: 20px;
-  height: 15px;
-  top: 19px;
-  right: 12px;
-  fill: none;
-  stroke: var(--basic-black);
-}
-
-.user-contact__telephone-icon {
-  position: absolute;
-  right: 10px;
-  top: 14px;
-  width: 20px;
-  height: 21px;
 }

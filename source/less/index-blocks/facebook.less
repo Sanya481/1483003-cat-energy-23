@@ -1,6 +1,23 @@
+.facebook-icon {
+  stroke: var(--shadow-color-4);
+  fill: none;
+}
+
+
 @media (min-width: @tablet-width) {
-  .facebook__icon {
+  .facebook-icon {
     width: 28px;
     height: 33px;
+    stroke: var(--shadow-color-4);
+    fill: none;
+  }
+}
+
+.facebook:hover .facebook-icon {
+  stroke: var(--basic-green);
+  fill: none;
+
+  &:active {
+    opacity: 0.6;
   }
 }
