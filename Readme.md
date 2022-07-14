@@ -4,6 +4,10 @@
 * Наставник:  [Михаил Кислый] (https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
+permalink: /index.html
+---
+
+---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
 
